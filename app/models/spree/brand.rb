@@ -27,11 +27,6 @@ module Spree
     def active?
       active == true ? Spree.t(:active) : Spree.t(:disabled)
     end
-
-    def brand_image
-      !image.file? && brand.present? && brand.images.any? ? brand.images.first.attachment : image
-    end
-
   end
 end
 

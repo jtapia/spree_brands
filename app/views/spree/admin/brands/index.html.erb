@@ -54,7 +54,7 @@
       <% @collection.each do |brand| %>
         <tr id='<%= spree_dom_id brand %>' data-hook='admin_brands_index_rows' class='<%= cycle('odd', 'even') %>'>
           <td class='align-center'>
-            <%= image_tag brand.brand_image, class: 'img-responsive', style: 'width: 100px; height: auto;' %>
+            <%= image_tag brand.image, class: 'img-responsive', style: 'width: 100px; height: auto;' %>
           </td>
           <td class='name'>
             <%= brand.name %>
